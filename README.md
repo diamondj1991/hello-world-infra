@@ -30,6 +30,10 @@ Due to the nature of the WSL2/Docker bridge, run the following to access the Ing
 1. Start the tunnel: `minikube tunnel`
 2. Add the IP to your hosts file: `192.168.49.2 hello-world.local`
 3. If traffic hangs, validate the internal route via `minikube ssh`.
+```bash
+docker@minikube:~$ curl -H "Host: hello-world.local" localhost
+<p>Hello, World!</p>
+```
 
 ## 🛡️ Security & Enterprise Improvements
 In a production environment, this deployment would be enhanced with:
