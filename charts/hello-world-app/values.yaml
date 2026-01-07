@@ -11,7 +11,7 @@ image:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v4.0.1"
+  tag: "v5.0.0"
   # Flask app runs on port 5000
   containerPort: 5000 
 
